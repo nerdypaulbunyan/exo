@@ -5,7 +5,12 @@
   <img alt="exo logo" src="/docs/exo-logo-transparent.png" width="50%" height="50%">
 </picture>
 
-exo: Run your own AI cluster at home with everyday devices. Maintained by [exo labs](https://x.com/exolabs).
+exo: Run your own AI cluster at home with everyday devices. 
+
+Nerdypaulbunyan's fork of EXO is only for docs and development. This is just a tribute. The greatest repo in the world is at:
+https://github.com/exo-explore/exo 
+
+EXO is maintained by [exo labs](https://x.com/exolabs).
 
 
 <h3>
@@ -15,7 +20,6 @@ exo: Run your own AI cluster at home with everyday devices. Maintained by [exo l
 </h3>
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/nerdypaulbunyan/exo)](https://github.com/nerdypaulbunyan/exo/stargazers)
-[![Tests](https://dl.circleci.com/status-badge/img/circleci/TrkofJDoGzdQAeL6yVHKsg/4i5hJuafuwZYZQxbRAWS71/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/TrkofJDoGzdQAeL6yVHKsg/4i5hJuafuwZYZQxbRAWS71/tree/main)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 <a href="https://trendshift.io/repositories/11849" target="_blank"><img src="https://trendshift.io/api/badge/repositories/11849" alt="exo-explore%2Fexo | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
