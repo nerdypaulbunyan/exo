@@ -8,7 +8,7 @@ nav:
   - FAQ: faq.md
 theme:
   name: material
-docs_dir: ./docs
+docs_dir: ./docs/mkdocs/docs
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.snippets

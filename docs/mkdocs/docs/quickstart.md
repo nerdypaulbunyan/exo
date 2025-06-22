@@ -1,7 +1,7 @@
 # Quickstart Guide
 
 ```sh
-git clone https://github.com/exo-explore/exo.git
+git clone https://github.com/nerdypaulbunyan/exo.git
 cd exo
 pip install -e .
 exo

@@ -14,7 +14,7 @@ exo: Run your own AI cluster at home with everyday devices. Maintained by [exo l
 
 </h3>
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/exo-explore/exo)](https://github.com/exo-explore/exo/stargazers)
+[![GitHub Repo stars](https://img.shields.io/github/stars/nerdypaulbunyan/exo)](https://github.com/nerdypaulbunyan/exo/stargazers)
 [![Tests](https://dl.circleci.com/status-badge/img/circleci/TrkofJDoGzdQAeL6yVHKsg/4i5hJuafuwZYZQxbRAWS71/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/TrkofJDoGzdQAeL6yVHKsg/4i5hJuafuwZYZQxbRAWS71/tree/main)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -49,7 +49,7 @@ exo [optimally splits up models](exo/topology/ring_memory_weighted_partitioning_
 
 ### Automatic Device Discovery
 
-exo will [automatically discover](https://github.com/exo-explore/exo/blob/945f90f676182a751d2ad7bcf20987ab7fe0181e/exo/orchestration/node.py#L154) other devices using the best method available. Zero manual configuration.
+exo will [automatically discover](https://github.com/nerdypaulbunyan/exo/blob/945f90f676182a751d2ad7bcf20987ab7fe0181e/exo/orchestration/node.py#L154) other devices using the best method available. Zero manual configuration.
 
 ### ChatGPT-compatible API
 
@@ -57,7 +57,7 @@ exo provides a [ChatGPT-compatible API](exo/api/chatgpt_api.py) for running mode
 
 ### Device Equality
 
-Unlike other distributed inference frameworks, exo does not use a master-worker architecture. Instead, exo devices [connect p2p](https://github.com/exo-explore/exo/blob/945f90f676182a751d2ad7bcf20987ab7fe0181e/exo/orchestration/node.py#L161). As long as a device is connected somewhere in the network, it can be used to run models.
+Unlike other distributed inference frameworks, exo does not use a master-worker architecture. Instead, exo devices [connect p2p](https://github.com/nerdypaulbunyan/exo/blob/945f90f676182a751d2ad7bcf20987ab7fe0181e/exo/orchestration/node.py#L161). As long as a device is connected somewhere in the network, it can be used to run models.
 
 Exo supports different [partitioning strategies](exo/topology/partitioning_strategy.py) to split up a model across devices. The default partitioning strategy is [ring memory weighted partitioning](exo/topology/ring_memory_weighted_partitioning_strategy.py). This runs an inference in a ring where each device runs a number of model layers proportional to the memory of the device.
 
@@ -69,7 +69,7 @@ The current recommended way to install exo is from source.
 
 ### Prerequisites
 
-- Python>=3.12.0 is required because of [issues with asyncio](https://github.com/exo-explore/exo/issues/5) in previous versions.
+- Python>=3.12.0 is required because of [issues with asyncio](https://github.com/nerdypaulbunyan/exo/issues/5) in previous versions.
 - For Linux with NVIDIA GPU support (Linux-only, skip if not using Linux or NVIDIA):
   - NVIDIA driver - verify with `nvidia-smi`
   - CUDA toolkit - install from [NVIDIA CUDA guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#cuda-cross-platform-installation), verify with `nvcc --version`
@@ -87,7 +87,7 @@ The current recommended way to install exo is from source.
 
 
 ```sh
-git clone https://github.com/exo-explore/exo.git
+git clone https://github.com/nerdypaulbunyan/exo.git
 cd exo
 pip install -e .
 # alternatively, with venv
@@ -283,8 +283,8 @@ exo supports the following inference engines:
 
 - ✅ [MLX](exo/inference/mlx/sharded_inference_engine.py)
 - ✅ [tinygrad](exo/inference/tinygrad/inference.py)
-- 🚧 [PyTorch](https://github.com/exo-explore/exo/pull/139)
-- 🚧 [llama.cpp](https://github.com/exo-explore/exo/issues/167)
+- 🚧 [PyTorch](https://github.com/nerdypaulbunyan/exo/pull/139)
+- 🚧 [llama.cpp](https://github.com/nerdypaulbunyan/exo/issues/167)
 
 ## Discovery Modules
 
@@ -307,6 +307,6 @@ exo supports the following inference engines:
 - **Note:** As of June 2025, some bounties—especially vision-related ones—may not be actively paid out. Please check the relevant GitHub issue or ask on [Discord](https://discord.gg/EUnjGpsmWw) before starting work if you are seeking a reward.
 - We still value and encourage contributions! Even if a bounty is not officially active, high-quality work may be eligible for a retrospective reward.
 - The bounty list is for reference and inspiration. If you have an idea or improvement, feel free to implement it and open a PR.
-- For the latest status, see the [GitHub Issues](https://github.com/exo-explore/exo/issues) or contact the maintainers on Discord.
+- For the latest status, see the [GitHub Issues](https://github.com/nerdypaulbunyan/exo/issues) or contact the maintainers on Discord.
 
 _Last updated: June 2025_
